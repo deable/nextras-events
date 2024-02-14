@@ -1,0 +1,14 @@
+name: deable-nextras-events
+services:
+  app:
+    type: php:8.0
+    via: cli
+tooling:
+  composer:
+    service: app
+    description: Run Composer
+    cmd: composer
+  php:
+    service: app
+    description: Run PHP cli
+    cmd: php

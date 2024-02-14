@@ -1,0 +1,36 @@
+{
+	"name": "deable/nextras-events",
+	"type": "library",
+	"description": "Symfony-like events for nextras orm.",
+	"keywords": [
+		"nette",
+		"nextras",
+		"events"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Lukas Povoda",
+			"email": "lupo112@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">= 8.0",
+		"nette/di": "^3.0",
+		"nextras/orm": "^4.0"
+	},
+	"archive": {
+		"exclude": [
+			".gitignore",
+			".editorconfig",
+			"*.md",
+			"*.yml",
+			"*.xml"
+		]
+	},
+	"autoload": {
+		"psr-4": {
+			"Deable\\NextrasEvents\\": "src"
+		}
+	}
+}
